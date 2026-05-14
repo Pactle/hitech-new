@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 25% 98%;
+  --foreground: 205 29% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 205 29% 13%;
+  --primary: 168 64% 28%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 16% 93%;
+  --secondary-foreground: 205 29% 13%;
+  --muted: 210 20% 95%;
+  --muted-foreground: 209 11% 43%;
+  --accent: 150 35% 91%;
+  --accent-foreground: 168 64% 20%;
+  --border: 210 18% 86%;
+  --input: 210 18% 86%;
+  --ring: 168 64% 28%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.erp-grid {
+  background-image:
+    linear-gradient(rgba(101, 113, 125, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(101, 113, 125, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
